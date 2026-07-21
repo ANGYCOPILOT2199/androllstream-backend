@@ -1,0 +1,9 @@
+.content {
+    padding: 20px;
+}
+
+.center-box {
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+}

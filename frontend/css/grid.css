@@ -1,0 +1,12 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.grid a {
+    display: block;
+    background: #222;
+    padding: 10px;
+    border-radius: 5px;
+}

@@ -1,0 +1,11 @@
+.channel-header {
+    margin-bottom: 20px;
+}
+
+.channel-header h1 {
+    margin: 0;
+}
+
+.channel-header p {
+    opacity: 0.8;
+}
