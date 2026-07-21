@@ -1,0 +1,16 @@
+body.light {
+    background: #f5f5f5;
+    color: #111;
+}
+
+body.light header {
+    background: #ddd;
+}
+
+body.light input,
+body.light textarea,
+body.light button {
+    background: #fff;
+    color: #111;
+    border: 1px solid #aaa;
+}

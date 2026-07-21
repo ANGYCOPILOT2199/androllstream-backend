@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Video</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+    <header>
+        <div class="logo">AndrollStream</div>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Upload Video</h1>
+
+        <form id="upload-form">
+            <input type="text" name="title" placeholder="Title" required>
+            <textarea name="description" placeholder="Description"></textarea>
+            <input type="text" name="channel_id" placeholder="Channel ID" required>
+            <input type="file" name="file" required>
+            <button type="submit">Upload</button>
+        </form>
+
+        <div id="upload-result"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

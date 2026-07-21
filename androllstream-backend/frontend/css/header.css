@@ -1,0 +1,15 @@
+header {
+    background: #222;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 20px;
+}
