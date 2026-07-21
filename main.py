@@ -1,13 +1,10 @@
-from fastapi import FastAPI
-from app.users import router as users_router
-from app.channels import router as channels_router
-from app.videos import router as videos_router
-from app.stream import router as stream_router
+from fastapi import APIRouter, Depends
+from sqlalchemy.orm import Session
+from app.database import get_db
+from app.models import Video
 
-app = FastAPI()
+router = APIRouter(prefix="/videos")
 
-app.include_router(users_router, prefix="/api/users")
-app.include_router(channels_router, prefix="/api/channels")
-app.include_router(videos_router, prefix="/api/videos")
-app.include_router(stream_router, prefix="/api/stream")
-app.include_router(videos.router, prefix="/api")
+@router.get("/all")
+def get_all_videos(db: Session = Depends(get_db)):
+    return db.query(Video).all()
